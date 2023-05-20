@@ -49,18 +49,34 @@ section{
     padding: 16px 24px;
 }
 #sports{
-    background-color: rgba(0, 255, 0, 0.1);
+    background-color: #daf5f9;
 }
 #sports .articles article a{
-    background: rgba(0, 255, 0, 0.8);
-    color: #000;
+    background: #10caf1;
+    color: #fff;
 }
+
 #economy{
-    background-color: #fffa65;
+    background-color: #eef9db;
 }
 #economy .articles article a{
-    background: #ff9f1a;
+    background: #8ccf76;
 }
+
+#entertainment{
+    background-color: #feede1;
+}
+#entertainment .articles article a{
+    background: #fe936c;
+}
+
+#tecnology{
+    background-color: #fbefff;
+}
+#tecnology .articles article a{
+    background: #d679fb;
+}
+
 section h2{
     font-size: 32px;
     text-align: center;
@@ -95,6 +111,7 @@ article{
 .articles article h3{
     margin: 8px 0 8px;
     font-size: 24px;
+    line-height: 140%;
 }
 .articles article p{
     font-size: 14px;
@@ -107,7 +124,7 @@ article{
     display: inline-block;
     text-decoration: none;
     border-radius: 30px;
-    margin-top: 8px;
+    margin-top: 16px;
     font-weight: bold;
 }
 .articles article a:hover{
