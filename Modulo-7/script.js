@@ -35,6 +35,7 @@ form.addEventListener("submit", function(e){
 
         mensagem.innerHTML = mensagemIgual;
         
+        boxMensagem.style.display = "block";
         boxMensagem.classList.remove("sucess-message");
         boxMensagem.classList.remove("error-message");
         boxMensagem.classList.add("info-message");
