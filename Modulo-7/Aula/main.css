@@ -6,6 +6,7 @@
 }
 
 body {
+    color: #000;
 }
 
 .container {
@@ -39,4 +40,18 @@ button {
 
 button:hover {
     background-color: #27ae60;
+}
+.sucess-message{
+    display: none;
+}
+.error-message{
+    color: red;
+    font-size: 11px;
+    margin-bottom: 12px;
+    display: none;
+}
+input.error{
+    border: 1px solid red;
+    color: red;
+    outline-color: red;
 }
