@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+header {
+  background: red;
+  padding: 16px 24px;
+  color: #fff;
+  display: flex;
+  border-bottom: 16px solid darkred;
+  justify-content: center;
+  text-transform: uppercase;
+}
+header button {
+  margin-left: 16px;
+}
+form {
+  background: gray;
+  padding: 24px;
+  text-align: center;
+  display: none;
+}
+input,
+button {
+  padding: 8px;
+}
+button {
+  background: green;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+#cancelar {
+  background: red;
+}
