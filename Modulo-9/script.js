@@ -11,5 +11,12 @@ $(document).ready(function () {
 
   $("form").on("submit", function (e) {
     e.preventDefault();
+    const enderecoImagemNova = $("#endereco-imagem").val();
+    const novoItem = $("<li></li>");
+    $(`<img src="${enderecoImagemNova}" />`).appendTo(novoItem);
+    $(
+      `<div class="overlay"><a href="${enderecoImagemNova}" title="Ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a></div>`
+    ).appendTo(novoItem);
+    $(novoItem).appendTo("ul");
   });
 });
