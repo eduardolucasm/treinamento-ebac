@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Harry Potter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 150) {
+                    $("header").addClass("active");
+                } else {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <ul>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-                <li>
-                    <a href="">Link 2</a>
-                </li>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#main-banner">Home</a>
+                    </li>
+                    <li>
+                        <a href="#casas">Casas</a>
+                    </li>
+                    <li>
+                        <a href="#historia">História</a>
+                    </li>
+                </ul>
+            </nav>
             <h1>
-                <a href="">
+                <a href="#" title="Harry Potter">
                     <img class="logo" src="images/Logo.png" alt="Harry Potter" />
                 </a>
             </h1>
-            <ul>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-                <li>
-                    <a href="">Link 1</a>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#midia">Mídia</a>
+                    </li>
+                    <li>
+                        <a href="#onde">Onde achar?</a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="destaque">Fale conosco</a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -59,15 +67,124 @@
             <div class="container">
                 <div>
                     <h2>Conheça o mundo mágico</h2>
-                    <a href="#" class="call-to-action">
+                    <a href="#" class="call-to-action call-primary">
                         Call to action
                     </a>
                 </div>
                 <div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="casas">
+            <h2 class="title">• Conheça o mundo mágico •</h2>
+            <div class="container">
+                <a href="">
+                    <img src="images/casa-1.png" alt="Grifindor" /">
+                </a>
+                <a href="">
+                    <img src="images/casa-2.png" alt="Grifindor" /">
+                </a>
+                <a href="">
+                    <img src="images/casa-3.png" alt="Grifindor" /">
+                </a>
+                <a href="">
+                    <img src="images/casa-4.png" alt="Grifindor" /">
+                </a>
+            </div>
+            <div class="center">
+                <p>Faça o teste rápido no Wizzard World e descubra a sua casa</p>
+                <a href="#" target="_blank" class="call-to-action call-secundary">
+                    Faça o teste
+                </a>
+            </div>
+        </section>
+        <hr />
+        <section id="historia">
+            <div class="container">
+                <img src="images/historia.png" alt="">
+                <div>
+                    <h2>História</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                    </p>
                 </div>
             </div>
         </section>
     </main>
+    <hr />
+    <section id="contact">
+        <div class="container">
+            <div class="contact-methods">
+                <div id="contato">
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" name="nome" placeholder="Seu Nome" id="nome" required />
+                        <input type="email" name="email" placeholder="Seu E-mail" id="email" required />
+                        <textarea name="mensagem" placeholder="Sua mensagem" id="Sua mensagem"></textarea>
+                        <button type="submit" class="call-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <h3>Redes sociais</h3>
+                    <ul>
+                        <li>
+                            <a href="http://" title="Siga-nos no Youtube" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" title="YouTube" aria-label="YouTube">
+                                    <path
+                                        d="M6.4 10V6l4 2-4 2zm8.307-5.438a1.772 1.772 0 00-1.237-1.263C12.378 3 8 3 8 3s-4.378 0-5.47.299a1.772 1.772 0 00-1.237 1.263C1 5.676 1 8 1 8s0 2.324.293 3.438a1.772 1.772 0 001.237 1.264C3.622 13 8 13 8 13s4.378 0 5.47-.298a1.772 1.772 0 001.237-1.264C15 10.324 15 8 15 8s0-2.324-.293-3.438z"
+                                        fill="#10141B" fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" title="Siga-nos no Facebook" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" title="Facebook" aria-label="Facebook">
+                                    <path
+                                        d="M9.19 14V8h1.775l.235-2.068H9.19l.002-1.036c0-.54.055-.828.885-.828h1.11V2H9.412C7.28 2 6.529 3.004 6.529 4.69v1.241H5.2V8h1.33v6h2.66z"
+                                        fill="#10141B" fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" title="Siga-nos no Instagram" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" title="Instagram" aria-label="Instagram">
+                                    <path
+                                        d="M10.425 2A3.579 3.579 0 0114 5.575v4.85A3.579 3.579 0 0110.425 14h-4.85A3.579 3.579 0 012 10.425v-4.85A3.579 3.579 0 015.575 2zm0 1.207h-4.85a2.368 2.368 0 00-2.368 2.368v4.85a2.368 2.368 0 002.368 2.368h4.85a2.368 2.368 0 002.368-2.368v-4.85a2.368 2.368 0 00-2.368-2.368zM8 4.897A3.107 3.107 0 0111.104 8 3.107 3.107 0 018 11.104 3.107 3.107 0 014.896 8 3.107 3.107 0 018 4.896zm0 1.207a1.896 1.896 0 100 3.792 1.896 1.896 0 000-3.792zm3.11-1.928a.744.744 0 110 1.487.744.744 0 010-1.487z"
+                                        fill="#10141B" fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" title="Siga-nos no Twitter" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" title="Twitter" aria-label="Twitter">
+                                    <path
+                                        d="M8.342 5.66l.024.433-.398-.053c-1.446-.203-2.71-.892-3.783-2.048l-.525-.574-.135.424c-.287.944-.104 1.942.493 2.612.317.371.246.424-.303.204-.19-.071-.357-.124-.373-.098-.056.062.135.865.286 1.183.206.442.628.874 1.089 1.13l.39.203-.462.009c-.445 0-.46.009-.413.194.159.574.787 1.183 1.486 1.448l.493.185-.429.283c-.65.41-1.381.635-2.13.653-.358.009-.652.044-.652.07 0 .089.97.584 1.534.777 1.693.574 3.704.327 5.214-.653 1.073-.697 2.146-2.083 2.647-3.425.27-.715.54-2.021.54-2.648 0-.406.024-.46.47-.944.262-.283.508-.592.556-.68.079-.168.071-.168-.334-.018-.676.265-.771.23-.438-.167.247-.283.54-.795.54-.945 0-.026-.118.018-.253.097-.143.088-.461.22-.7.3l-.43.15-.388-.29c-.216-.16-.517-.336-.676-.39-.406-.123-1.025-.105-1.391.036-.994.397-1.621 1.422-1.55 2.542z"
+                                        fill="#10141B" fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="onde" class="location">
+                    <h3>Localização</h3>
+                    <p>
+                        Procure a estação King's Cross e se informar onde fica a plataforma 9 3/4
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>© WIZARDING WORLD DIGITAL - 2023 - Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
+
 </html>
