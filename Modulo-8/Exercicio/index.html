@@ -5,10 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Contatos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header>
+    <div class="container">
+      <img src="images/logo.png" alt="Usuário" />
+      <h1>Adicionar contato</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <form id="form-novo-contato">
+        <input type="text" name="nome" id="nome-input" placeholder="Nome" required />
+        <input type="tel" name="telefone" id="telefone-input" placeholder="Telefone" required />
+        <button type="submit">Salvar</button>
+      </form>
 
+      <table cellpading="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Telefone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">Nenhum contado adicionado ainda</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Número de contatos adicionados: <span id="quantidadeContatos">0</span></p>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
