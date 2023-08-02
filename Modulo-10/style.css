@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+/* html {
+  overflow-x: hidden;
+} */
 .container {
   max-width: 1440px;
   width: 100%;
@@ -12,18 +15,18 @@
 header {
   background-color: red;
   color: #fff;
-  padding-top: 16px;
 }
 header .container:first-child {
   justify-content: space-between;
   align-items: center;
-  display: flex;
   padding-bottom: 16px;
+  padding: 16px 16px;
 }
 nav {
   background-color: blueviolet;
   padding: 16px;
   text-align: center;
+  display: none;
 }
 nav li {
   list-style: none;
@@ -37,6 +40,7 @@ nav li a {
 }
 .menu-hamburguer {
   width: 24px;
+  cursor: pointer;
 }
 .menu-hamburguer span {
   height: 2px;
@@ -46,4 +50,57 @@ nav li a {
   border-radius: 200px;
   overflow: hidden;
   margin-bottom: 4px;
+}
+#carrosel-images {
+  width: 100%;
+  overflow: hidden;
+}
+.container-flex {
+  display: flex;
+}
+#sobre img {
+  max-width: 440px;
+  margin-right: 32px;
+}
+section {
+  padding: 48px 24px;
+}
+section h2 {
+  margin-bottom: 16px;
+}
+.list-veiculos {
+  flex-wrap: wrap;
+}
+.list-veiculos li {
+  list-style: none;
+  max-width: 30%;
+  margin-bottom: 24px;
+}
+.list-veiculos img {
+  max-width: 100%;
+}
+.list-veiculos h3 {
+  margin: 16px 0;
+}
+.item-central {
+  margin: 0 5%;
+}
+.list-veiculos li button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.list-veiculos .price {
+  margin: 16px 0;
+  display: block;
+}
+.price del {
+  color: #ccc;
+  font-size: 11px;
 }

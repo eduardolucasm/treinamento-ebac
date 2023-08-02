@@ -19,7 +19,7 @@
 <body>
 
   <header>
-    <div class="container">
+    <div class="container container-flex">
       <h1>Motors</h1>
       <div class="menu-hamburguer">
         <span></span>
@@ -47,16 +47,163 @@
       </nav>
     </div>
   </header>
-  <div class="carrosel-images">
-    <img src="images/slide1.png" alt="">
-    <img src="images/slide2.png" alt="">
-    <img src="images/slide3.png" alt="">
+  <div id="carrosel-images">
+    <img src="images/slide1.png" alt="Porshe">
+    <img src="images/slide2.png" alt="BMW">
+    <img src="images/slide3.png" alt="Ford">
   </div>
+
+  <section id="sobre">
+    <div class="container container-flex">
+      <img src="images/loja.jpg" alt="" srcset="">
+      <div>
+        <h2>Sobre</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis totam error atque illum cupiditate
+          praesentium magnam maxime pariatur sapiente tenetur, neque similique esse hic itaque. Similique eum distinctio
+          neque velit!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="destaques">
+    <div class="container">
+      <h2>Destaques</h2>
+      <ul class="container-flex list-veiculos">
+        <li>
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li class="item-central">
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li>
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li>
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li class="item-central">
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="promocoes">
+    <div class="container">
+      <h2>Promoções</h2>
+      <ul class="container-flex list-veiculos">
+        <li>
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <del>R$ 100.000,00</del>
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li class="item-central">
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <del>R$ 100.000,00</del>
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li>
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <del>R$ 100.000,00</del>
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li>
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <del>R$ 100.000,00</del>
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+        <li class="item-central">
+          <img src="images/carro-bmw.png" alt="" />
+          <h3>Carro BMW</h3>
+          <p>Descrição básica do carro, como alguns detalhers do modelo</p>
+          <div class="price">
+            <del>R$ 100.000,00</del>
+            <strong>R$ 75.000,00</strong>
+          </div>
+          <button type="button">
+            Tenho interesse
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <script>
     $(document).ready(function () {
-      $(`.carrosel-images`).slick({
+      $(`#carrosel-images`).slick({
         autoplay: true,
       });
+      $(`.menu-hamburguer`).click(function () {
+        $(`nav`).slideToggle();
+      })
     })
   </script>
 </body>
